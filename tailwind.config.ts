@@ -10,6 +10,13 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "hero": "url('/images/desktop/image-header.jpg')"
+      },
+      fontFamily: {
+        "barlow": ["Barlow", "sans-serif"],
+        "fraunces": ["Fraunces", "sans-serif"]
+      },
+      textColor: {
+        "body": "#818498"
       }
     }
   },
