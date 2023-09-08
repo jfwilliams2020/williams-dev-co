@@ -1,3 +1,4 @@
+import Image from "next/image";
 import TestimonialCard from "./_components/testimonial-card";
 
 export default function Sunnyside() {
@@ -79,6 +80,96 @@ export default function Sunnyside() {
             authorName="Jennie F."
             authorTitle="Business Owner"
           />
+        </div>
+      </div>
+      <div className="grid grid-cols-4">
+        <div className="h-96 relative">
+          <Image 
+            alt="Milk bottles"
+            src="/images/desktop/image-gallery-milkbottles.jpg"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "center"
+            }}
+          />
+        </div>
+        <div className="h-96 relative">
+          <Image 
+            alt="Orange"
+            src="/images/desktop/image-gallery-orange.jpg"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "center"
+            }}
+          />
+        </div>
+        <div className="h-96 relative">
+          <Image 
+            alt="Waffle cone"
+            src="/images/desktop/image-gallery-cone.jpg"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "center"
+            }}
+          />
+        </div>
+        <div className="h-96 relative">
+          <Image 
+            alt="Sugar cubes"
+            src="/images/desktop/image-gallery-sugarcubes.jpg"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "center"
+            }}
+          />
+        </div>
+      </div>
+      <div className="p-12 bg-[#458c7e] bg-opacity-50 text-center text-[#25564b] space-y-12">
+        <div className="font-semibold flex-auto text-4xl">
+          <a href="#">sunnyside</a>
+        </div>
+        <div className="text-[#458c7e] flex space-x-10 items-center justify-center">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+        </div>
+        <div className="flex space-x-4 items-center justify-center">
+          <a href="#">
+            <Image 
+              src="/images/icon-facebook.svg"
+              height={16}
+              width={16}
+              alt="Facebook"
+            />
+          </a>
+          <a href="#">
+            <Image 
+              src="/images/icon-instagram.svg"
+              height={16}
+              width={16}
+              alt="Instagram"
+            />
+          </a>
+          <a href="#">
+            <Image 
+              src="/images/icon-twitter.svg"
+              height={16}
+              width={16}
+              alt="Twitter"
+            />
+          </a>
+          <a href="#">
+            <Image 
+              src="/images/icon-pinterest.svg"
+              height={16}
+              width={16}
+              alt="Pintereset"
+            />
+          </a>
         </div>
       </div>
     </main>
