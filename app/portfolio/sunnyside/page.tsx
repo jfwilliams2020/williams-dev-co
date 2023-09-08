@@ -1,3 +1,5 @@
+import TestimonialCard from "./_components/testimonial-card";
+
 export default function Sunnyside() {
   return (
     <main className="font-barlow text-lg">
@@ -52,6 +54,31 @@ export default function Sunnyside() {
               <div className="rounded-full h-2 w-full bg-[#fe7867] opacity-30 absolute bottom-1.5 -z-10"></div>
             </a>
           </div>
+        </div>
+      </div>
+      <div className="p-32">
+        <div className="text-center font-fraunces text-xl font-[900] tracking-widest text-[#a7abae] mb-16">
+          CLIENT TESTIMONIALS
+        </div>
+        <div className="grid grid-cols-3 gap-10">
+          <TestimonialCard 
+            imageUrl="/images/image-emily.jpg"
+            content="We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
+            authorName="Emily R."
+            authorTitle="Marketing Director"
+          />
+          <TestimonialCard
+            imageUrl="/images/image-thomas.jpg"
+            content="Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience."
+            authorName="Thomas S."
+            authorTitle="Chief Operating Officer"
+          />
+          <TestimonialCard
+            imageUrl="/images/image-jennie.jpg"
+            content="Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"
+            authorName="Jennie F."
+            authorTitle="Business Owner"
+          />
         </div>
       </div>
     </main>
