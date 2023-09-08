@@ -6,7 +6,13 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {},
+  theme: {
+    extend: {
+      backgroundImage: {
+        "hero": "url('/images/desktop/image-header.jpg')"
+      }
+    }
+  },
   plugins: [],
 }
 export default config
