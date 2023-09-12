@@ -3,7 +3,7 @@ import TestimonialCard from "./_components/testimonial-card";
 
 export default function Sunnyside() {
   return (
-    <main className="font-barlow text-lg">
+    <main className="font-barlow text-lg max-w-7xl m-auto">
       <div className="h-[90vh] bg-hero bg-cover bg-bottom">
         <div className="flex p-6 items-center text-white">
           <div className="font-semibold flex-auto text-4xl">
@@ -17,8 +17,9 @@ export default function Sunnyside() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2">
-        <div className="flex items-center justify-center p-32">
+      <div className="grid md:grid-cols-2">
+        <div className="bg-[url('/images/desktop/image-transform.jpg')] w-full aspect-[3/2] md:h-full bg-cover bg-center" />
+        <div className="flex items-center justify-center p-16 md:p-32 md:order-first">
           <div className="space-y-6">
             <div className="text-4xl font-bold font-fraunces">
               Transform your brand
@@ -35,11 +36,10 @@ export default function Sunnyside() {
             </a>
           </div>
         </div>
-        <div className="bg-[url('/images/desktop/image-transform.jpg')] w-full h-full bg-cover bg-center" />
       </div>
-      <div className="grid grid-cols-2">
-        <div className="bg-[url('/images/desktop/image-stand-out.jpg')] w-full h-full bg-cover bg-center" />
-        <div className="flex items-center justify-center p-32">
+      <div className="grid md:grid-cols-2">
+        <div className="bg-[url('/images/desktop/image-stand-out.jpg')] w-full aspect-[3/2] md:h-full bg-cover bg-center" />
+        <div className="flex items-center justify-center p-16 md:p-32">
           <div className="space-y-6">
             <div className="font-fraunces text-4xl font-bold">
               Stand out to the right audience
@@ -57,11 +57,11 @@ export default function Sunnyside() {
           </div>
         </div>
       </div>
-      <div className="p-32">
+      <div className="pb-32 pt-16 px-16 md:p-32">
         <div className="text-center font-fraunces text-xl font-[900] tracking-widest text-[#a7abae] mb-16">
           CLIENT TESTIMONIALS
         </div>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-3 gap-10">
           <TestimonialCard 
             imageUrl="/images/image-emily.jpg"
             content="We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
@@ -82,7 +82,7 @@ export default function Sunnyside() {
           />
         </div>
       </div>
-      <div className="grid grid-cols-4">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4">
         <div className="h-96 relative">
           <Image 
             alt="Milk bottles"
