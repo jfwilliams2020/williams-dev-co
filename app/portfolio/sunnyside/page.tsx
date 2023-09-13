@@ -1,21 +1,22 @@
+"use client"
+
 import Image from "next/image";
 import TestimonialCard from "./_components/testimonial-card";
+import Navbar from "./_components/navbar";
 
 export default function Sunnyside() {
   return (
-    <main className="font-barlow text-lg max-w-7xl m-auto">
-      <div className="h-[90vh] bg-hero bg-cover bg-bottom">
-        <div className="flex p-6 items-center text-white">
-          <div className="font-semibold flex-auto text-4xl">
-            <a href="#">sunnyside</a>
-          </div>
-          <div className="flex space-x-10 items-center">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Projects</a>
-            <button className="font-fraunces text-black bg-white px-6 py-4 rounded-full">CONTACT</button>
-          </div>
-        </div>
+    <main className="font-barlow text-lg max-w-7xl m-auto relative">
+      <div className="h-[90vh] min-h-[700px] bg-hero bg-cover bg-bottom">
+        <Navbar />
+        <div className="mt-16 text-center text-5xl font-fraunces font-bold tracking-widest text-white">WE ARE CREATIVES</div>
+        <Image 
+          className="mt-16 m-auto"
+          src="/images/icon-arrow-down.svg"
+          height={32}
+          width={32}
+          alt="Down Arrow"
+        />
       </div>
       <div className="grid md:grid-cols-2">
         <div className="bg-[url('/images/desktop/image-transform.jpg')] w-full aspect-[3/2] md:h-full bg-cover bg-center" />
@@ -90,7 +91,7 @@ export default function Sunnyside() {
             fill
             style={{
               objectFit: "cover",
-              objectPosition: "center"
+              objectPosition: "center",
             }}
           />
         </div>
